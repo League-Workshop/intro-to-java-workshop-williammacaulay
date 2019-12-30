@@ -1,0 +1,11 @@
+size(1000, 1000);
+fill(#D8CD67);
+ellipse(800, 500, 200, 200);
+fill(#D8CD67);
+ellipse(600, 625, 100, 200);
+fill(#D8CD67);
+ellipse(375, 625, 100, 200);
+fill(#D8CD67);
+ellipse(275, 550, 100, 25);
+fill(#0BFF00);
+ellipse(500, 500, 450, 350);
