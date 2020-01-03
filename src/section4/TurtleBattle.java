@@ -46,10 +46,10 @@ public class TurtleBattle {
 			dragonHealth = dragonHealth-40;
 		}
 		if(attack.equals("2")) {
-			JOptionPane.showMessageDialog(null, "The dragon was sucessfully damaged.");
+			JOptionPane.showMessageDialog(null, "The turtle was sucessfully damaged.");
 			dragonHealth = dragonHealth-80;
 		}
-			JOptionPane.showMessageDialog(null, "The dragon is on "+dragonHealth+" health!");
+			JOptionPane.showMessageDialog(null, "The turtle is on "+dragonHealth+" health!");
 			
 			if(attack.equals("3")) {
 				JOptionPane.showMessageDialog(null, "You sucessfully healed yourself.");

@@ -9,10 +9,7 @@ public class SpeakAndSpell {
 
 	public static void main(String[] args) {
 		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
-speak("Bee Movie Script\n" + 
-		"  \n" + 
-		"  \n" + 
-		"According to all known laws\n" + 
+speak("According to all known laws\n" + 
 		"of aviation,\n" + 
 		"\n" + 
 		"  \n" + 
@@ -1436,7 +1433,7 @@ speak("Bee Movie Script\n" +
 		"\n" + 
 		"  \n" + 
 		"All right. Well, then...\n" + 
-		"I guess I'll see you around. YA LIKE JAZZ???\n" + 
+		"I guess I'll see you around.\n" + 
 		"\n" + 
 		"  \n" + 
 		"Or not.\n" + 
