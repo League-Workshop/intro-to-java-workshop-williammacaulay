@@ -4,20 +4,20 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 import javax.swing.ImageIcon;
 
-public class DragonFight {
+public class TurtleBattle {
 	// 1. Put all of the game code inside the main method (below) 
 	public static void main(String[] args) {
 		
-		ImageIcon turtle = new ImageIcon("https://docs.google.com/drawings/d/1Bsxo_vVW-ApGmXoacWm-Zt33ucn_nl7OqhFIdDzJIR4/edit");		
+		ImageIcon turtle = new ImageIcon("turtle.png");		
 		
-		JOptionPane.showMessageDialog(null, "Defeat the dragon for food!", "Dragon Battle", 0, turtle);
+		JOptionPane.showMessageDialog(null, "Defeat the turtle for food!", "Turtle Battle", 0, turtle);
 		// 2. Create a variable called "playerHealth" to store your health (set it equal to 100)
 		int playerHealth = 100;
 		// 3. Create a variable called "dragonHealth" to store the dragon's health (set it equal to 100)
 		int dragonHealth = 400;
 		// 4. Create a variable to hold the damage the player's attack does each round
 		// 5. Create a variable to hold the damage the dragon's attack does each round
-		int maxDragonDamage = 20;
+		int maxDragonDamage = 30;
 		
 		int dragonDamage = 0;
 		
@@ -34,7 +34,7 @@ public class DragonFight {
 		
 		// 9. If they typed in "yell":
 		dragonDamage = rand.nextInt(maxDragonDamage+1);
-		JOptionPane.showMessageDialog(null,"The turtle attacks with a fireball!");
+		JOptionPane.showMessageDialog(null,"The turtle attacks with a water blast!");
 		playerHealth=playerHealth-dragonDamage;
 		JOptionPane.showMessageDialog(null, "You are on "+playerHealth+" health!");
 		
@@ -42,7 +42,7 @@ public class DragonFight {
 		
 		if(attack.equals("1")) {
 			JOptionPane.showMessageDialog(null, "The water dampened the turtle's attack.");
-			maxDragonDamage = maxDragonDamage-3;
+			maxDragonDamage = maxDragonDamage-5;
 			dragonHealth = dragonHealth-40;
 		}
 		if(attack.equals("2")) {
@@ -91,10 +91,10 @@ public class DragonFight {
 			
 			//-- Pop up a message that tells the their current health and the dragon's currently health (Bonus: Also display the amount of health that was lost for each player this round)
 		if(playerHealth<=(0)) {
-		JOptionPane.showMessageDialog(null, "You died, and the dragon ate your corpse.");
+		JOptionPane.showMessageDialog(null, "You died, and the turtle ate your corpse.");
 		}
 		if(dragonHealth<=(0)) {
-		JOptionPane.showMessageDialog(null, "You killed the dragon, and you ate it's corpse.");
+		JOptionPane.showMessageDialog(null, "You killed the turtle and ate it's corpse.");
 			}
 		}
 	}
